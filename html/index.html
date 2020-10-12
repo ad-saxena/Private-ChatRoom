@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center {
+          text-align: center;
+          border: 3px solid #800c00;
+        }
+        
+        </style>
+    <title> Ad-Chat2 </title>
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+    <div class="center">
+        <h1>Welcome!</h1>
+    </div>
+    <div id = "Main">
+      <audio id = "Ding" src = "Ding.mp3"> </audio>
+      <h1 id = "Title"> AD-ChatRoom </h1>
+      <div id = "AccessPort">
+        <label id = "NameLabel"> Username  </label>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel"> Chatroom </label>
+        <input id = "IDInput" value = "Room1" type = "text">
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
+      </div>
+      <br>
+      <h2 id = "RoomID"> Chatroom : None </h2>
+      <br>
+      <div id = "Chat"class="container">
+        <div id = "Message0" class = "Message"> <br><br> </div>
+        <p id = "Message1" class = "Message"> <br><br> </p>
+        <p id = "Message2" class = "Message"> <br><br> </p>
+        <p id = "Message3" class = "Message"> <br><br> </p>
+        <p id = "Message4" class = "Message"> <br><br> </p>
+        <p id = "Message5" class = "Message"> <br><br> </p>
+        <p id = "Message6" class = "Message"> <br><br> </p>
+        <p id = "Message7" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+        <p id = "Message8" class = "Message"> <br><br> </p>
+
+        <div>
+          <br>
+      </div>
+      <br>
+      </div>
+      <br>
+      <br>
+      <div class="message-bar">
+      <label id = "MessageLabel"> Message  </label>
+      &nbsp;
+        <input id = "ComposedMessage" type = "text">
+        <input id = "SendMessage" onclick="Send()" value = "Send" class = "Button" type = "submit">
+      </div>
+    </div>
+    <div class="center">
+        <small>
+          Powered by <a href="http://AD-Chat.io">AD-Chat</a>
+        </small>
+      </div>
+  </body>
+</html>
